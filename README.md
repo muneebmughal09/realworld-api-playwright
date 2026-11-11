@@ -1,6 +1,6 @@
 # RealWorld API Test Automation (Playwright + TypeScript)
 
-![API Tests](https://github.com/YOUR_USERNAME/realworld-api-playwright/actions/workflows/playwright.yml/badge.svg)
+![API Tests](https://github.com/muneebmughal09/Api-Realworld-playwright-Testing/actions/workflows/playwright.yml/badge.svg)
 ![Playwright](https://img.shields.io/badge/Playwright-API%20Testing-2EAD33?logo=playwright&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)
 
