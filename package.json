@@ -1,0 +1,19 @@
+{
+  "name": "realworld-api-playwright",
+  "version": "1.0.0",
+  "description": "API test automation framework for the RealWorld (Conduit) backend, built with Playwright and TypeScript",
+  "scripts": {
+    "test": "playwright test",
+    "test:auth": "playwright test tests/auth.spec.ts",
+    "test:articles": "playwright test tests/articles.spec.ts",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["playwright", "api-testing", "typescript", "test-automation", "qa", "realworld"],
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  }
+}
