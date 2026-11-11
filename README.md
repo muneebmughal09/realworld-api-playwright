@@ -77,21 +77,7 @@ API tests use Playwright's request context only, so **no browser download is nee
 | `npm run report` | Open the HTML report |
 | `npm run typecheck` | Type-check the project |
 
-### Pointing at another environment
-
-```bash
-BASE_URL=https://staging.example.com/api/ npm test
-```
-
-Keep the trailing slash in `BASE_URL`.
-
-## Design decisions
-
-- **One helper layer, thin tests**: setup logic lives in helpers, so each test reads as intent plus assertions.
-- **Unique data per test**: timestamp plus random suffix avoids collisions when tests run in parallel.
-- **Status-code arrays where the spec allows it**: for example `[200, 204]` on delete, so tests check the contract and not an implementation detail.
-
 ## Author
 
-**YOUR NAME**, QA Automation Engineer
-[LinkedIn](https://www.linkedin.com/in/YOUR_PROFILE) · [GitHub](https://github.com/YOUR_USERNAME)
+**Muhammad Muneeb**, QA Automation Engineer
+[LinkedIn](www.linkedin.com/in/muhammad-muneeb-173614366) · [GitHub](https://github.com/muneebmughal09)
