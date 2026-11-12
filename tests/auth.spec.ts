@@ -18,12 +18,12 @@ test.describe('Auth', () => {
     expect(response.status()).toBe(422);
   });
 
-  // test('Register with invalid email', async ({ request }) => {
-  //   const response = await request.post('users', {
-  //     data: { user: { email: 'not-an-email', username: `Inv${Date.now()}`, password: 'test12345' } },
-  //   });
-  //   expect(response.status()).toBe(422);
-  // });
+  test('Register with invalid email', async ({ request }) => {
+    const response = await request.post('users', {
+      data: { user: { email: 'not-an-email', username: `Inv${Date.now()}`, password: 'test12345' } },
+    });
+    expect(response.status()).toBe(422);
+  });
 
   test('Login with valid credentials', async ({ request }) => {
     const { input, output } = await loginUser(request);
