@@ -32,11 +32,11 @@ test.describe('Auth', () => {
     expect(output).not.toHaveProperty('password');
   });
 
-  // test('Login with wrong password', async ({ request }) => {
-  //   const { input } = await registerUser(request);
-  //   const response = await request.post('users/login', {
-  //     data: { user: { email: input.email, password: 'wrong-password' } },
-  //   });
-  //   expect([401, 403, 422]).toContain(response.status());
-  // });
+  test('Login with wrong password', async ({ request }) => {
+    const { input } = await registerUser(request);
+    const response = await request.post('users/login', {
+      data: { user: { email: input.email, password: 'wrong-password' } },
+    });
+    expect([401, 403, 422]).toContain(response.status());
+  });
 });
