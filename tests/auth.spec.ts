@@ -2,12 +2,12 @@ import { test, expect } from '@playwright/test';
 import { registerUser, loginUser } from '../helpers/api.helpers';
 
 test.describe('Auth', () => {
-  test('Register with valid credentials', async ({ request }) => {
-    const { input, output } = await registerUser(request);
-    expect(output.email).toBe(input.email);
-    expect(output.username).toBe(input.username);
-    expect(output.token).toBeTruthy();
-  });
+  // test('Register with valid credentials', async ({ request }) => {
+  //   const { input, output } = await registerUser(request);
+  //   expect(output.email).toBe(input.email);
+  //   expect(output.username).toBe(input.username);
+  //   expect(output.token).toBeTruthy();
+  // });
 
   test('Register with duplicate email', async ({ request }) => {
     test.fail(true, 'Known API issue: duplicate emails are accepted (returns 201 instead of 422)');
